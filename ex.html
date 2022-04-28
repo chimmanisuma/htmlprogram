@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 80px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="myform">
+        Username: <input type="text" name="u_field"><br><br>
+        <input type="submit" name="sbtn" value="submit">
+
+    </form>
+    <script>
+        function validatedata(){
+            var ptrn =/^([^0-9\w]*)$/;
+            if(ptrn.test(document.myform.u_field.value)){
+                document.myform.u_field.style.backgroundcolor = 'green';
+
+            }else{
+                document.myform.u_field.style.backgroundcolor = 'red';
+
+            }
+        }
+        document.myform.u_field.addEventListener("keyup", validatedata);
+
+    
+    </script>
+</body>
+</html>

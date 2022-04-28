@@ -1,0 +1,43 @@
+ Dom is document objec model
+
+                       document
+                          |
+                          Root element(<html>)
+                          |
+        |                                               |
+ Element<head>                                       Element<body>
+     |                                                  |
+ Element<title>                                |               |
+      |                                        |               |
+ Text: "my title"     Attribute"heref-        Element<a>        Element<h1>
+                                            |                 |
+                                                            
+                                     Text:"my Link"       Text:"my header"
+
+
+
+how to Target Dom object:(imp)
+
+id--------->document.getElementById(id)
+
+class Name---->document.getElementsByClassName(name)  //we have many class so we 's in elements
+
+Tag Name----->document.getElementsByTagName(name)
+
+other domTargeting methods:
+
+document
+document.all
+document.documentElement
+document.title
+document.head
+document.body
+document.images
+document.anchors
+documents.Links
+document.forms
+document.doctype
+document.URL
+document.baseURL
+documetn.domain
+
